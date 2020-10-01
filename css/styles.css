@@ -259,3 +259,44 @@ header .banner .banner-slider figure img {
     border-radius: 5px;
     margin-bottom: 5px;
 }
+
+/* Produtos -------------------------------------- */
+
+.produtos {
+    margin: 20px auto;
+    text-align: center;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    gap: 20px;
+}
+
+.produtos h1 {
+    font-size: 1.5rem;
+    font-weight: 300;
+    grid-column: span 2;
+}
+.produtos .produto {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #CCC;
+    border-radius: 5px;
+}
+
+.produtos .first {
+    grid-column: span 2;
+}
+
+.produtos .produto img {
+    width: 100%;
+    border: 1px solid red;
+}
+
+.produtos .produto .produto-content h1 {
+    font-size: 1rem;
+}
+
+.produtos .produto p {
+    font-size: 0.9rem;
+}
