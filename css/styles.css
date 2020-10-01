@@ -33,7 +33,7 @@ header .topo {
     align-items: center;
     padding: 10px;
     font-size: 1.8rem;
-    background: #9733EE;
+    background: #262626;
 }
 
 header .topo .logo img {
@@ -54,7 +54,7 @@ header .topo .menu {
 header .topo nav {
     width: 100%;
     text-align: center;
-    background:#FFF;
+    background:#262626;
     border-radius: 0 0 10px 10px;
 
     visibility: hidden;
@@ -83,7 +83,7 @@ header .topo nav ul i {
 
 header .topo nav ul li a {
     font-size: 1.3rem;
-    color: #000;
+    color: #FFF;
     padding: 5px;
     margin: 5px;
 }
@@ -95,7 +95,7 @@ header .topo .cart {
 /* Banner ----------------------------------- */
 
 header .banner {
-    background-color: rgb(245, 244, 245);
+    background-color: #f2f2f2;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -218,4 +218,44 @@ header .banner .banner-slider figure img {
 
 .destaques .produtos-destaque .destaque-content p {
     font-size: 0.8rem;
+}
+
+/* Newsletter ------------------------------------------*/
+.newsletter {
+    background-color: #f2f2f2;
+    margin: 20px auto;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.newsletter .newsletter-titulo {
+    margin: 20px;
+}
+
+.newsletter .newsletter-titulo h1 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+    font-weight: 300;
+}
+
+.newsletter .newsletter-titulo p {
+    font-size: 1rem;
+    margin: 0 20px;
+}
+
+.newsletter form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.newsletter form input {
+    width: 70%;
+    line-height: 100%;
+    padding: 5px;
+    background-color: #FFF;
+    border: 1px solid #CCC;
+    border-radius: 5px;
+    margin-bottom: 5px;
 }
