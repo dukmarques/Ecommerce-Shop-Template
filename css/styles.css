@@ -402,8 +402,6 @@ footer p a {
         max-width: 1200px;
         flex-direction: row;
         justify-content: space-around;
-
-        border: 1px solid red;
     }
 
     .promocoes .produtos-promocoes .promocoes-content {
@@ -411,8 +409,6 @@ footer p a {
         max-width: 300px;
         margin: 10px 10px;
         flex-direction: column;
-
-        border: 1px solid red;
     }
     
     .promocoes .produtos-promocoes .promocoes-content img {
@@ -513,4 +509,28 @@ footer p a {
     }
 }
 
-@media (min-width: 100)
+@media (min-width: 1000px) {
+    header .topo input {
+        width: 40%;
+
+
+        text-align: center;
+        border: none;
+        border-radius: 5px;
+    } 
+
+    header .topo .menu {
+        display: none;
+    }
+    
+    header .topo nav {
+        visibility: visible;
+        width: 20%;
+        position: static;
+    }
+    
+    header .topo nav ul {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
