@@ -1,0 +1,147 @@
+/*Resert -------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 100%;
+    font-family: 'Lato', sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+/*Container ------------------------------*/
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    margin: 0 auto;
+    text-align: center;
+    background: #FFF;
+
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+/*Content Area ---------------------------*/
+
+.container .content-area {
+    height: 50vh;
+    margin: 10px;
+}
+
+.container .content-area nav {
+    width: 100%;
+}
+
+.container .content-area nav a {
+    text-align: center;
+    display: inline-block;
+    background: rgb(255, 74, 74);
+    border-radius: 5px;
+    color: #FFF;
+    width: 80px;
+    padding: 10px;
+    margin: 20px 3px;
+
+}
+
+.container .content-area .abas div {
+    display: none;
+}
+
+
+.container .content-area .abas div:target {
+    display: block;
+}
+
+.container .content-area .abas{
+    margin: 50px 0;
+}
+
+.container .content-area .abas .signin{
+    text-align: center;
+}
+
+.container .content-area .abas .signin h1 {
+    font-size: 1.5rem;
+}
+
+.container .content-area .abas .signin form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .content-area .abas .signin input {
+    width: 80%;
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #CCC;
+    border-radius: 5px;
+}
+
+.container .content-area .abas .signin input[type="submit"] {
+    background: rgb(255, 74, 74);
+    color: #FFF;
+    padding: 10px;
+}
+
+.container .content-area .abas .signup{
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.container .content-area .abas .signup h1{
+    font-size: 1.5rem;
+}
+
+.container .content-area .abas .signup input {
+    width: 80%;
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #CCC;
+    border-radius: 5px;
+}
+
+.container .content-area .abas .signup input[type="submit"] {
+    background: rgb(255, 74, 74);
+    color: #FFF;
+    padding: 10px;
+}
+
+/*Visual Area ---------------------------*/
+.container .visual-area {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.container .visual-area h1 {
+    width: 100%;
+    font-size: 1.5rem;
+    margin: 20px;
+}
+
+.container .visual-area p {
+    width: 80%;
+    margin: 10px;
+}
+
+.container .visual-area img {
+    width: 50%;
+}
+
+/*Media query -------------------------------*/
