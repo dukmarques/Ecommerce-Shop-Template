@@ -27,6 +27,7 @@ header {
 }
 
 header .topo {
+    width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -94,6 +95,7 @@ header .topo .cart {
 /* Banner ----------------------------------- */
 
 header .banner {
+    width: 100%;
     background-color: #f2f2f2;
     display: flex;
     flex-direction: column;
@@ -160,19 +162,11 @@ header .banner .banner-slider figure img {
     70% {
         left: -200%;
     }
-    75% {
-        left: -300%;
-    }
-    95% {
-        left: -300%;
-    }
-    100% {
-        left: -400%;
-    }
+    
 }
 
 /* Produtos em Promoções ------------------------*/
-.destaques {
+.promocoes {
     background: #FFF;
     display: flex;
     flex-direction: column;
@@ -181,13 +175,13 @@ header .banner .banner-slider figure img {
     text-align: center;
 }
 
-.destaques h1 {
+.promocoes h1 {
     font-size: 1.5rem;
     padding: 40px 0 20px 0;
     font-weight: 300;   
 }
 
-.destaques .produtos-destaque {
+.promocoes .produtos-promocoes {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -195,7 +189,7 @@ header .banner .banner-slider figure img {
     padding: 20px;
 }
 
-.destaques .produtos-destaque .destaque-content {
+.promocoes .produtos-promocoes .promocoes-content {
     width: 100%;
     border-radius: 10px;
     box-shadow: 5px 5px 15px 0px rgba(44, 44, 44, 0.2);
@@ -206,7 +200,7 @@ header .banner .banner-slider figure img {
     justify-content: flex-start;
 }
 
-.destaques .produtos-destaque .destaque-content span {
+.promocoes .produtos-promocoes .promocoes-content span {
     font-size: 1.5rem;
     color: red;
     position: relative;
@@ -214,26 +208,27 @@ header .banner .banner-slider figure img {
     right: -90px;
 }
 
-.destaques .produtos-destaque .destaque-content img {
+.promocoes .produtos-promocoes .promocoes-content img {
     width: 100%;
     border-radius: 10px 10px 0 0;
 }
 
-.destaques .produtos-destaque .destaque-content .promocao {
+.promocoes .produtos-promocoes .promocoes-content .promocao {
     width: 90%;
+    padding: 10px 0;
 }
 
-.destaques .produtos-destaque .destaque-content .promocao h2 {
+.promocoes .produtos-promocoes .promocoes-content .promocao h2 {
     font-size: 1.2rem;
     font-weight: 300;
 }
 
-.destaques .produtos-destaque .destaque-content .promocao p.promocao-valor {
+.promocoes .produtos-promocoes .promocoes-content .promocao p.promocao-valor {
     font-size: 1rem;
     text-decoration: line-through; /*Rica o valor*/
 }
 
-.destaques .produtos-destaque .destaque-content .promocao p.promocao-destaque {
+.promocoes .produtos-promocoes .promocoes-content .promocao p.promocao-destaque {
     font-size: 1.5rem;
     margin-bottom: 20px;
 }
@@ -244,6 +239,11 @@ header .banner .banner-slider figure img {
     margin: 20px auto;
     padding: 30px 20px;
     text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .newsletter .newsletter-titulo {
@@ -262,6 +262,7 @@ header .banner .banner-slider figure img {
 }
 
 .newsletter form {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -278,7 +279,7 @@ header .banner .banner-slider figure img {
     margin-bottom: 5px;
 }
 
-/* Produtos -------------------------------------- */
+/* Produtos em Destaque -------------------------------------- */
 
 .produtos {
     margin: 20px auto;
@@ -374,3 +375,142 @@ footer p {
 footer p a {
     color: #9733EE;
 }
+
+/* Breakpoints ----------------------------------- */
+@media (min-width: 700px) {
+
+    /*Banner ---------------------------------*/
+    header .banner .banner-slider {
+        overflow: none;
+    }
+    
+    header .banner .banner-slider figure {
+        animation: none;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    header .banner .banner-slider figure img {
+        width: 30%;
+    }
+
+    /*Promoções -----------------------------------*/
+    .promocoes .produtos-promocoes {
+        width: 100%;
+        max-width: 1200px;
+        flex-direction: row;
+        justify-content: space-around;
+
+        border: 1px solid red;
+    }
+
+    .promocoes .produtos-promocoes .promocoes-content {
+        width: 100%;
+        max-width: 300px;
+        margin: 10px 10px;
+        flex-direction: column;
+
+        border: 1px solid red;
+    }
+    
+    .promocoes .produtos-promocoes .promocoes-content img {
+        width: 100%;
+    }
+
+    .promocoes .produtos-promocoes .promocoes-content span {
+        top: 0px;
+        right: 0px;
+    }
+    
+    .promocoes .produtos-promocoes .promocoes-content .promocao h2 {
+        font-size: 1.5rem;
+    }
+    
+    .promocoes .produtos-promocoes .promocoes-content .promocao p.promocao-valor {
+        font-size: 1.2rem;
+    }
+
+    /*Produtos em destaque ------------------------*/
+    .produtos {
+        width: 100%;
+        max-width: 1100px;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-items: center;
+        align-items: center;
+        gap: 20px;
+        
+        
+        display: grid;
+        margin: 20px auto;
+        text-align: center;
+        padding: 10px;
+    }
+    
+    .produtos h1 {
+        font-size: 1.5rem;
+        font-weight: 300;
+        grid-column: span 3;
+    }
+    
+    .produtos .produto {
+        width: 100%;
+        max-width: 400px;
+        max-height: 300px;
+        
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        flex-wrap: nowrap;
+
+        padding: 10px;
+        border: 1px solid #CCC;
+        border-radius: 5px;
+    }
+    
+    .produtos .produto img {
+        object-fit: cover;
+        max-height: 150px;
+    }
+    
+    .produtos .produto .produto-content {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .produtos .produto .produto-content h1 {
+        font-size: 0.9rem;
+    }
+    
+    .produtos .produto .produto-content .produto-avaliacao {
+        font-size: 0.9rem;
+    }
+
+    .produtos .produto p {
+
+    }
+
+    .produtos .first {
+        grid-column: span 1;
+        grid-row: span 2;
+        height: 430px;
+        max-height: 100%;
+    }
+
+    .produtos .first img {
+        width: 100%;
+        max-width: 100%;
+        height: 400px;
+        max-height: 100%;
+    }
+
+    .newsletter form {
+        max-width: 700px;
+    }
+}
+
+@media (min-width: 100)
