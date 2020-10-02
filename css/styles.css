@@ -365,6 +365,24 @@ header .banner .banner-slider figure img {
     padding-left: 10px;
 }
 
+.bottom-menu .sociais {
+    text-align: center;
+}
+
+.bottom-menu .sociais h1 {
+    display: none;
+}
+
+.bottom-menu .sociais ul {
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.bottom-menu .sociais ul li a {
+    color: #262626;
+    font-size: 1.5rem;
+}
 /*Footer ------------------------------------------*/
 footer {
     background: #262626;
@@ -540,6 +558,21 @@ footer p a {
         padding-left: 10px;
     }
 
+    .bottom-menu .sociais {
+        text-align: center;
+    }
+
+    .bottom-menu .sociais h1 {
+        display: block;
+    }
+
+    .bottom-menu .sociais ul {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
     .links ul {
         padding: 10px 0;
     }
@@ -551,6 +584,26 @@ footer p a {
 
     .links ul li a {
         color: #262626;
+    }
+
+    .bottom-menu .sociais ul li #linkedin::after {
+        content: "LinkedIn";
+        font-size: 1rem;
+    }
+
+    .bottom-menu .sociais ul li #facebook::after {
+        content: "Facebook";
+        font-size: 1rem;
+    }
+
+    .bottom-menu .sociais ul li #insta::after {
+        content: "Instagram";
+        font-size: 1rem;
+    }
+
+    .bottom-menu .sociais ul li #twitter::after {
+        content: "Twitter";
+        font-size: 1rem;
     }
 }
 
