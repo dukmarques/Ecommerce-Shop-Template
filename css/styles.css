@@ -32,6 +32,7 @@ header .topo {
     justify-content: space-around;
     align-items: center;
     padding: 10px;
+    margin: 0 10px;
     font-size: 1.8rem;
     background: #262626;
 }
@@ -86,6 +87,10 @@ header .topo nav ul li a {
     color: #FFF;
     padding: 5px;
     margin: 5px;
+}
+
+header .topo .user {
+    color: #FFF;
 }
 
 header .topo .cart {
@@ -506,6 +511,46 @@ footer p a {
 
     .newsletter form {
         max-width: 700px;
+    }
+
+    /*Bottom Menu ---------------------------------*/
+    .hidden {
+        display: block;
+    }
+    
+    .bottom-menu {
+        width: 100%;
+        padding: 20px;
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .bottom-menu .localizacao {
+        width: 30%;
+    }
+
+    .bottom-menu .localizacao iframe {
+        width: 100%;
+        height: 150px;
+        border-radius: 5px;
+    }
+    
+    .bottom-menu .localizacao p {
+        color: #3b3b3b;
+        padding-left: 10px;
+    }
+
+    .links ul {
+        padding: 10px 0;
+    }
+
+    .links ul li {
+        color: #262626;
+        margin: 10px 0;
+    }
+
+    .links ul li a {
+        color: #262626;
     }
 }
 
