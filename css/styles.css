@@ -38,7 +38,7 @@ header .topo {
     padding: 10px;
     margin: 0 10px;
     font-size: 1.8rem;
-    background: #262626;
+    background: linear-gradient(to right, #FF4A4A, #ff8080);
 }
 
 header .topo .logo img {
@@ -59,7 +59,7 @@ header .topo .menu {
 header .topo nav {
     width: 100%;
     text-align: center;
-    background:#262626;
+    background:linear-gradient(to right, rgb(255, 74, 74), #ff8080);
     border-radius: 0 0 10px 10px;
 
     visibility: hidden;
@@ -105,7 +105,7 @@ header .topo .cart {
 
 header .banner {
     width: 100%;
-    background-color: #f2f2f2;
+    background-color: #f8f2f2;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -129,7 +129,7 @@ header .banner a {
     padding: 10px;
     padding: 10px;
     color: #FFF;
-    background: #9733EE;
+    background: #FF4A4A;
     border-radius: 5px;
 }
 
@@ -244,7 +244,7 @@ header .banner .banner-slider figure img {
 
 /* Newsletter ------------------------------------------*/
 .newsletter {
-    background-color: #f2f2f2;
+    background-color: #f8f2f2;
     margin: 20px auto;
     padding: 30px 20px;
     text-align: center;
@@ -282,10 +282,15 @@ header .banner .banner-slider figure img {
     width: 70%;
     line-height: 100%;
     padding: 5px;
-    background-color: #FFF;
     border: 1px solid #CCC;
     border-radius: 5px;
     margin-bottom: 5px;
+}
+
+.newsletter form input[type="submit"] {
+    color: #FFF;
+    background-color: #FF4A4A;
+    padding: 10px;
 }
 
 /* Produtos em Destaque -------------------------------------- */
@@ -331,7 +336,7 @@ header .banner .banner-slider figure img {
 
 /*Sobre ------------------------------------------*/
 .sobre {
-    background: #f2f2f2;
+    background: #f8f2f2;
     padding: 30px 0;
 }
 
@@ -384,7 +389,7 @@ header .banner .banner-slider figure img {
 }
 
 .bottom-menu .sociais ul li a {
-    color: #262626;
+    color: #FF4A4A;
     font-size: 1.5rem;
 }
 /*Footer ------------------------------------------*/
