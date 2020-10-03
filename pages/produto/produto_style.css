@@ -262,6 +262,62 @@ header .topo .cart {
     font-size: 0.8rem;
 }
 
+/*Avaliações --------------------------------------*/
+.avaliacoes {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+.avaliacoes .content {
+    width: 100% !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.avaliacoes hr {
+    width: 70%;
+    border: 1px solid #CCC;
+}
+
+.avaliacoes .content .user-info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    font-size: 0.8rem;
+}
+
+.avaliacoes .content .user-info img {
+    width: 100%;
+    min-width: 70px;
+}
+
+.avaliacoes .content .user-info img {
+    width: 100%;
+    min-width: 70px;
+}
+
+.avaliacoes .content .user-info h1 {
+    width: 100%;
+}
+
+.avaliacoes .content .user-info p {
+    width: 100%;
+}
+
+.avaliacoes .content .comentario {
+    padding: 10px;
+    font-size: 0.9rem;
+    font-weight: 300;
+}
+
 /*Footer ------------------------------------------*/
 footer {
     background: #262626;
