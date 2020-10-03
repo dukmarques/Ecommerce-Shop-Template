@@ -354,7 +354,7 @@ footer p a {
         margin: 10px auto;
         display: grid;
         grid-template-columns: 1fr 1fr minmax(400px, 1fr);
-        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
         grid-template-areas: 
             "pictures pictures titulo"
             "pictures pictures content";
