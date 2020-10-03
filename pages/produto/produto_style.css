@@ -220,6 +220,47 @@ header .topo .cart {
     font-weight: 300;
 }
 
+/*Produtos Similares ------------------------------*/
+.similares {
+    background: #f8f2f2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.similares h1 {
+    font-size: 1.5rem;
+    font-weight: 300;
+    padding: 10px;
+}
+
+.similares .produtos {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.similares .produtos .produto {
+    width: 100%;
+    max-width: 160px;
+    margin: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-size: 0.8rem;
+}
+
+.similares .produtos .produto img {
+    grid-column: 1;
+    grid-row: span 3;
+    width: 100%;
+}
+
+.similares .produtos .produto .nome-produto {
+    font-size: 0.8rem;
+}
 
 /*Footer ------------------------------------------*/
 footer {
