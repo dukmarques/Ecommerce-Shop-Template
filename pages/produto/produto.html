@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="fonts/css/font-awesome.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="../../fonts/css/font-awesome.min.css">
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="produto_style.css">
+    <title>Produto - Ecommerce</title>
+</head>
+<body>
+    <header id="home">
+        <div class="topo">
+            <a class="logo" href="../../index.html"><img src="../../img/placeholder-white.png" alt=""></a>
+            <input type="search" name="search" id="search">
+            <a class="menu" href="#dropdown-nav"><i class="fa fa-bars" aria-hidden="true"></i></a>
+            <nav id="dropdown-nav">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="">Shop</a></li>
+                    <li><a href="">Ajuda</a></li>
+                </ul>
+            </nav>
+            <a class="user" href="pages/user/register-login.html#signup"><i class="fa fa-user" aria-hidden="true"></i></a>
+            <a class="cart" href=""><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+        </div>
+    </header>
+
+    <section class="produto">
+        <div class="titulo-avaliacao">
+            <h1 class="titulo">Título Produto</h1>
+            <div class="avaliacao">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+                <p>5 Avaliações</p>
+            </div>
+        </div>
+
+        <div class="pictures">
+            
+            <div class="show" id="show">
+                <div id="img1">
+                    <img id="" src="img/box-1.png" alt="">
+                </div>
+                
+                <div id="img2">
+                    <img id="signup" src="img/box-2.png" alt="">
+                </div>
+
+                <div id="img3">
+                    <img id="signup" src="img/box-3.png" alt="">
+                </div>
+            </div>
+            <nav>
+                <a href="#img1"><img src="img/box-1.png" alt=""></a>
+                <a href="#img2"><img src="img/box-2.png" alt=""></a>
+                <a href="#img3"><img src="img/box-3.png" alt=""></a>
+            </nav>
+        </div>
+
+        <div class="content">
+            <div class="preco-tipo">
+                <h1>R$ 1232</h1>
+                <select name="tipo" id="tipo">
+                    <option value="none" selected>Selecione o Modelo</option>
+                    <option value="model1">Modelo 1</option>
+                    <option value="model2">Modelo 2</option>
+                    <option value="model3">Modelo 3</option>
+                </select>
+            </div>
+            <div class="descricao">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Nam nemo maxime perspiciatis eligendi suscipit vitae minus, 
+                    necessitatibus esse expedita sit labore tempora, laudantium 
+                    repellendus accusamus eos qui fugit, earum obcaecati.
+                </p>
+            </div>
+            <a class="add-car" href="">Adicionar ao Carrinho <i class="fa fa-cart-plus" aria-hidden="true"></i></a>
+        </div>
+    </section>
+
+    <section class="similares">
+        <h1>Produtos Similares</h1>
+        <div class="produtos">
+            <div class="produto">
+                <img src="img/box-4.png" alt="">
+                <p class="nome">Nome Produto</p>
+                <div class="avaliacao">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                    <p>5 Avaliações</p>
+                </div>
+                <p class="preco">R$ 300</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; E-Commerce, 2020 - Desenvolvido por <a href="https://dukmarques.github.io/" target="_blank">Duk.dev</a></p>
+    </footer>
+</body>
+</html>

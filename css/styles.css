@@ -15,6 +15,7 @@ a {
     margin: 0;
     padding: 0;
     text-decoration: none;
+    cursor: pointer;
 }
 
 html {
@@ -38,7 +39,7 @@ header .topo {
     padding: 10px;
     margin: 0 10px;
     font-size: 1.8rem;
-    background: linear-gradient(to right, #FF4A4A, #ff8080);
+    background: #FF4A4A;
 }
 
 header .topo .logo img {
@@ -59,7 +60,7 @@ header .topo .menu {
 header .topo nav {
     width: 100%;
     text-align: center;
-    background:linear-gradient(to right, rgb(255, 74, 74), #ff8080);
+    background: #FF4A4A;
     border-radius: 0 0 10px 10px;
 
     visibility: hidden;
@@ -223,6 +224,7 @@ header .banner .banner-slider figure img {
 }
 
 .promocoes .produtos-promocoes .promocoes-content .promocao {
+    color: #262626;
     width: 90%;
     padding: 10px 0;
 }
@@ -325,11 +327,16 @@ header .banner .banner-slider figure img {
     width: 100%;
 }
 
+.produtos .produto .produto-content {
+    color: #262626;
+}
+
 .produtos .produto .produto-content h1 {
     font-size: 1rem;
 }
 
 .produtos .produto p {
+    color: #262626;
     font-size: 0.9rem;
 }
 
@@ -518,10 +525,6 @@ footer p a {
         font-size: 0.9rem;
     }
 
-    .produtos .produto p {
-
-    }
-
     .produtos .first {
         grid-column: span 1;
         grid-row: span 2;
@@ -529,11 +532,22 @@ footer p a {
         max-height: 100%;
     }
 
-    .produtos .first img {
+    .produtos .first a img {
         width: 100%;
         max-width: 100%;
-        height: 400px;
+        height: 350px;
         max-height: 100%;
+    }
+
+    .produtos .first a .produto-content {
+        width: 300px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .produtos .first a p {
+
     }
 
     .newsletter form {
