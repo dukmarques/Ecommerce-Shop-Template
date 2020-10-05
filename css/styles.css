@@ -654,4 +654,16 @@ footer p a {
         flex-direction: row;
         justify-content: space-around;
     }
+
+    header .user::after {
+        content: "Entrar";
+        font-size: 1.1rem;
+        margin-left: 5px;
+    }
+
+    header .cart::after {
+        content: "Carrinho";
+        font-size: 1.1rem;
+        margin-left: 5px;
+    }
 }
