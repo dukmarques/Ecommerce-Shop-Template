@@ -219,7 +219,7 @@ header .topo .cart {
 }
 
 #envio .content .radios {
-    width: 90%;
+    width: 100%;
     border: 1px solid #CCC;
     border-radius: 5px;
     margin: 5px;
@@ -250,16 +250,21 @@ header .topo .cart {
 
 /*Pagamento ------------------------------------------------*/
 #pagamento {
-    margin: 0 auto;
+    margin: 10px auto;
     text-align: center;
 }
 
 #pagamento h1 {
+    margin: 10px;
     font-size: 1.5rem;
     font-weight: 300;
 }
 
-#pagamento label.cartao {
+#pagamento label {
+    margin: 10px;
+}
+
+#pagamento .cartao {
     margin: 5px;
     display: flex;
     flex-direction: column;
@@ -407,4 +412,72 @@ header .topo .cart {
     padding: 10px;
     margin: 10px;
     border-radius: 5px;
+}
+
+/*Breakpoints ----------------------------------*/
+@media (min-width: 700px) {
+
+    #carrinho {
+        margin: 0 auto;
+    }
+
+    #carrinho .produtos .produto .content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .abas-buttons {
+        max-width: 700px;
+    }
+    .aba {
+        max-width: 700px;
+    }
+
+    .resumo {
+        max-width: 700px;
+        margin: 0 auto;
+    }
+
+    .resumo .finalizar-pagamento {
+        width: 100%;
+    }
+}
+
+@media (min-width: 1000px) {
+    header .topo input {
+        width: 40%;
+
+
+        text-align: center;
+        border: none;
+        border-radius: 5px;
+    } 
+
+    header .topo .menu {
+        display: none;
+    }
+    
+    header .topo nav {
+        visibility: visible;
+        width: 20%;
+        position: static;
+    }
+    
+    header .topo nav ul {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    header .user::after {
+        content: "Entrar";
+        font-size: 1.1rem;
+        margin-left: 5px;
+    }
+
+    header .cart::after {
+        content: "Carrinho";
+        font-size: 1.1rem;
+        margin-left: 5px;
+    }
 }
