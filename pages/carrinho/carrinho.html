@@ -72,24 +72,6 @@
             </div>
         </div>
 
-        <div class="resumo">
-            <h1>Resumo</h1>
-            <div class="cupon">
-                <input type="text" name="" id="" placeholder="Cupon de Desconto">
-                <input type="submit" value="Aplicar">
-            </div>
-            <div class="total">
-                <p>Subtotal</p>
-                <p>R$ 900</p>
-                <p>Envio</p>
-                <p>FREE</p>
-                <p>Taxas</p>
-                <p>R$ 10</p>
-                <h2>TOTAL</h2>
-                <h2>R$ 910</h2>
-            </div>
-        </div>
-
         <div class="finalizar">
             <a href="#envio">Próximo</a>
             <a href="../../index.html">Cancelar</a>
@@ -98,14 +80,60 @@
     </div>
 
     <div id="envio" class="aba">
-        <h1>Envio</h1>
-        <img src="img/box-2.png" alt="" width="100px">
+        <h1>Detalhes de Envio</h1>
+        <div class="content">
+            <input type="text" name="nome" id="nome" placeholder="Primeiro Nome">
+            <input type="text" name="sobrenome" id="sobrenome" placeholder="Sobre Nome">
+            <input type="text" name="endereco" id="endereco" placeholder="Endereço">
+            <input type="text" name="complemento" id="complemento" placeholder="Complemento">
+            <input type="text" name="cidade" id="cidade" placeholder="Cidade">
+            <input type="text" name="estado" id="estado" placeholder="Estado">
+            <input type="text" name="cep" id="cep" placeholder="CEP">
+            <input type="tel" name="tel" id="tel" placeholder="Telefone">
+            <div class="radios">
+                <input type="radio" name="envio" id="gratis">
+                <label for="gratis" class="content">
+                    <h2>Envio Gratuito</h2>
+                    <p>Entre 2 - 5 dias úteis</p>
+                </label>
+            </div>
+            <div class="radios">
+                <input type="radio" name="envio" id="pago">
+                <label for="pago" class="content">
+                    <h2>Br Envios - R$ 100</h2>
+                    <p>24 horas (sqn)</p>
+                </label>
+            </div>
+        </div>
+
+        <div class="finalizar">
+            <a href="#envio">Próximo</a>
+            <a href="../../index.html">Cancelar</a>
+        </div>
     </div>
 
     <div id="pagamento" class="aba">
         <h1>Pagamento</h1>
-        <img src="img/box-3.png" alt="" width="100px">
+        
     </div>
+
+    <section class="resumo">
+        <h1>Resumo</h1>
+        <div class="cupon">
+            <input type="text" name="" id="" placeholder="Cupon de Desconto">
+            <input type="submit" value="Aplicar">
+        </div>
+        <div class="total">
+            <p>Subtotal</p>
+            <p>R$ 900</p>
+            <p>Envio</p>
+            <p>FREE</p>
+            <p>Taxas</p>
+            <p>R$ 10</p>
+            <h2>TOTAL</h2>
+            <h2>R$ 910</h2>
+        </div>
+    </section>
 
 </body>
 </html>
