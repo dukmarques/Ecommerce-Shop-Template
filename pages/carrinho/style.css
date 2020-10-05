@@ -1,0 +1,135 @@
+/*Resert -------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 100%;
+    font-family: 'Lato', sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+/* Header -------------------------------------*/
+header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header .topo {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    margin: 0 10px;
+    font-size: 1.8rem;
+    background: #FF4A4A;
+}
+
+header .topo .logo img {
+    width: 48px;
+}
+
+header .topo input {
+    text-align: center;
+    width: 60%;
+    border: none;
+    border-radius: 5px;
+} 
+
+header .topo .menu {
+    color: #FFF;
+}
+
+header .topo nav {
+    width: 100%;
+    text-align: center;
+    background: #FF4A4A;
+    border-radius: 0 0 10px 10px;
+
+    visibility: hidden;
+    position: fixed;
+    top: 0px;
+    left: 0;
+}
+
+header .topo nav:target {
+    top: 74px;
+    visibility: visible;
+    z-index: 1;
+    transition: 0.5s all;
+}
+
+header .topo nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+header .topo nav ul i {
+
+}
+
+header .topo nav ul li a {
+    font-size: 1.3rem;
+    color: #FFF;
+    padding: 5px;
+    margin: 5px;
+}
+
+header .topo .user {
+    color: #FFF;
+}
+
+header .topo .cart {
+    color: #FFF;
+}
+
+/*Buttons Abas -------------------------------*/
+.abas-buttons {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.abas-buttons nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 5px;
+}
+
+.abas-buttons nav a {
+    color: #FFF;
+    font-size: 1.2rem;
+    font-weight: 300;
+    padding: 5px;
+    margin: 5px 5px;
+    background: #FF4A4A;
+    border-radius: 5px;
+    border: 1px solid #CCC;
+}
+
+/*Section Abas ---------------------------------*/
+.abas {
+    margin: 0 auto;
+}
+
+.abas div{
+    display: none;
+}
+
+.abas div:target {
+    display: block;
+}
