@@ -122,14 +122,130 @@ header .topo .cart {
 }
 
 /*Section Abas ---------------------------------*/
-.abas {
-    margin: 0 auto;
-}
-
-.abas div{
+.aba {
     display: none;
+    width: 100%;
 }
 
-.abas div:target {
+.aba:target {
     display: block;
+}
+
+/*Carrinhos ------------------------------------*/
+#carrinho {
+    text-align: center;
+}
+
+#carrinho .titulo-carrinho {
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+/*Produtos Carrinho*/
+#carrinho .produtos {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+#carrinho .produtos .produto {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#carrinho .produtos .produto img {
+    width: 25%;
+}
+
+#carrinho .produtos .produto .content {
+    width: 100%;
+    margin: 10px;
+    font-weight: 300;
+}
+
+#carrinho .produtos .produto .content h1 {
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+#carrinho .produtos .produto .content p + p {
+    margin-top: 5px;
+}
+
+#carrinho .produtos .produto input {
+    width: 20%;
+    border: 1px solid #CCC;
+    border-radius: 3px;
+    text-align: center;
+}
+
+/*Resumo Carrinho */
+#carrinho .resumo {
+    margin: 10px;
+}
+
+#carrinho .resumo h1 {
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+#carrinho .resumo .cupon {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#carrinho .resumo .cupon input {
+    width: 100%;
+    margin: 5px;
+    padding: 8px;
+    border: 1px solid #CCC;
+    border-radius: 5px;
+}
+
+#carrinho .resumo .cupon input[type="submit"] {
+    background: #FF4A4A;
+    color: #FFF;
+    max-width: 25%;
+}
+
+#carrinho .resumo .total {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    justify-items: start;
+    margin: 10px;
+}
+
+#carrinho .resumo .total p {
+    font-size: 1rem;
+    font-weight: 300;
+    margin: 5px;
+}
+
+#carrinho .resumo .total h2 {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin: 10px 0;
+}
+
+/* Carrinho Finalizar */
+
+#carrinho .finalizar {
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 1.2rem;
+}
+
+#carrinho .finalizar a {
+    background: #FF4A4A;
+    color: #FFF;
+    border-radius: 5px;
+    width: 80%;
+    padding: 10px;
+    margin: 10px;
 }

@@ -37,17 +37,75 @@
         </nav>
     </div>
 
-    <section class="abas">
-        <div id="carrinho">
-            <h1>Carrinho</h1>
+    <div id="carrinho" class="aba">
+        <h1 class="titulo-carrinho">Carrinho de Compras</h1>
+        
+        <div class="produtos">
+            <div class="produto">
+                <img src="img/box-1.png" alt="">
+                <div class="content">
+                    <h1>Nome Produto</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    <p>R$ 300</p>
+                </div>
+                <input type="number" name="quantidade" id="quantidade" value="1" min="1" max="10">
+            </div>
+
+            <div class="produto">
+                <img src="img/box-2.png" alt="">
+                <div class="content">
+                    <h1>Nome Produto</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    <p>R$ 300</p>
+                </div>
+                <input type="number" name="quantidade" id="quantidade" value="1" min="1" max="10">
+            </div>
+
+            <div class="produto">
+                <img src="img/box-3.png" alt="">
+                <div class="content">
+                    <h1>Nome Produto</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    <p>R$ 300</p>
+                </div>
+                <input type="number" name="quantidade" id="quantidade" value="1" min="1" max="10">
+            </div>
         </div>
-        <div id="envio">
-            <h1>Envio</h1>
+
+        <div class="resumo">
+            <h1>Resumo</h1>
+            <div class="cupon">
+                <input type="text" name="" id="" placeholder="Cupon de Desconto">
+                <input type="submit" value="Aplicar">
+            </div>
+            <div class="total">
+                <p>Subtotal</p>
+                <p>R$ 900</p>
+                <p>Envio</p>
+                <p>FREE</p>
+                <p>Taxas</p>
+                <p>R$ 10</p>
+                <h2>TOTAL</h2>
+                <h2>R$ 910</h2>
+            </div>
         </div>
-        <div id="pagamento">
-            <h1>Pagamento</h1>
+
+        <div class="finalizar">
+            <a href="#envio">Próximo</a>
+            <a href="../../index.html">Cancelar</a>
         </div>
-    </section>
+
+    </div>
+
+    <div id="envio" class="aba">
+        <h1>Envio</h1>
+        <img src="img/box-2.png" alt="" width="100px">
+    </div>
+
+    <div id="pagamento" class="aba">
+        <h1>Pagamento</h1>
+        <img src="img/box-3.png" alt="" width="100px">
+    </div>
 
 </body>
 </html>
