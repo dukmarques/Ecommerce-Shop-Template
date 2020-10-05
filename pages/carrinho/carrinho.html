@@ -107,13 +107,38 @@
         </div>
 
         <div class="finalizar">
-            <a href="#envio">Próximo</a>
+            <a href="#pagamento">Próximo</a>
             <a href="../../index.html">Cancelar</a>
         </div>
     </div>
 
     <div id="pagamento" class="aba">
-        <h1>Pagamento</h1>
+        <h1>Método de Pagamento</h1>
+        
+        <label class="cartao" for="cartao">
+            <div class="content">
+                <input type="radio" name="cartao" id="cartao">
+                <div class="text">
+                    <h2>Cartão de Crédito</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+            <div class="cartao-content">
+                <input type="number" name="numero" id="numero" placeholder="0000 0000 0000 0000">
+                <input type="number" name="data" id="data" placeholder="MM/YY">
+                <input type="number" name="cvv" id="cvv" placeholder="CVV">
+                <input type="text" name="nome" id="nome" placeholder="Nome do Títular">
+            </div>
+        </label>
+
+        <label class="paypal" for="paypal">
+            <input type="radio" name="paypal" id="paypal">
+            <div class="content">
+                <h2>Paypal</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <img src="img/paypal.png" alt="">
+        </label>
         
     </div>
 
@@ -133,6 +158,8 @@
             <h2>TOTAL</h2>
             <h2>R$ 910</h2>
         </div>
+
+        <a class="finalizar-pagamento" href="../../index.html">Finalizar Compra</a>
     </section>
 
 </body>

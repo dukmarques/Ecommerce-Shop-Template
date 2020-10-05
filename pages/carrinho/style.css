@@ -186,8 +186,6 @@ header .topo .cart {
     width: 100%;
     text-align: center;
     margin: 0 auto;
-
-    border: 1px solid red;
 }
 
 #envio h1 {
@@ -197,6 +195,7 @@ header .topo .cart {
 }
 
 #envio .content {
+    margin: 0 5px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-items: center;
@@ -249,9 +248,92 @@ header .topo .cart {
     font-size: 0.8rem;
 }
 
+/*Pagamento ------------------------------------------------*/
+#pagamento {
+    margin: 0 auto;
+    text-align: center;
+}
+
+#pagamento h1 {
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+#pagamento label.cartao {
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #CCC;
+}
+
+#pagamento .cartao .content {
+    margin: 5px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+#pagamento .cartao .content input {
+    width: 10%;
+}
+
+#pagamento .cartao .content .text {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    font-weight: 300;
+}
+
+#pagamento .cartao .cartao-content {
+    display: grid;
+    text-align: center;
+    margin: 5px;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+}
+
+#pagamento .cartao .cartao-content input {
+    height: 30px;
+    border: 1px solid #CCC;
+    border-radius: 3px;
+    text-align: center;
+}
+
+#pagamento .cartao .cartao-content input[name="numero"] {
+    width: 100%;
+    grid-column: span 2;
+}
+
+#pagamento .cartao .cartao-content input[name="nome"] {
+    grid-column: span 2;
+}
+
+#pagamento .paypal {
+    margin: 5px;
+    padding: 10px;
+    border: 1px solid #CCC;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#pagamento .paypal .content {
+    margin: 5px;
+    font-weight: 300;
+    text-align: start;
+}
+
+#pagamento .paypal img {
+    width: 30%;
+}
+
 /*Resumo ---------------------------------------------------*/
 .resumo {
     margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .resumo h1 {
@@ -315,4 +397,14 @@ header .topo .cart {
     width: 80%;
     padding: 10px;
     margin: 10px;
+}
+
+.resumo .finalizar-pagamento {
+    width: 95%;
+    text-align: center;
+    color: #FFF;
+    background: #FF4A4A;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
 }
