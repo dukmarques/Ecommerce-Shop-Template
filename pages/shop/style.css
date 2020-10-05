@@ -218,7 +218,6 @@ header .topo .cart {
 .newsletter img {
     margin: 10px 5px;
     width: 25%;
-    border: 1px solid red;
 }
 
 .newsletter .content h1 {
@@ -245,4 +244,82 @@ header .topo .cart {
     width: 35%;
     background: #FF4A4A;
     color: #FFF;
+}
+
+/*Produtos ----------------------------------------*/
+.produtos {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 5px;
+    margin: 10px 0;
+}
+
+.produtos .cabecalho {
+    width: 100%;
+    margin-bottom: 20px;
+    grid-column: span 3;
+    height: 100%;
+}
+
+.produtos .cabecalho h1 {
+    font-size: 1.5rem;
+    padding: 20px;
+}
+
+.produtos .cabecalho p {
+    margin: 20px;
+}
+
+.produtos .cabecalho a {
+    padding: 10px;
+    color: #FFF;
+    background: #FF4A4A;
+    border-radius: 5px;
+}
+
+.produtos .produto {
+    width: 95%;
+    justify-self: center;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border: 1px solid #CCC;
+}
+
+.produtos .produto img {
+    width: 40%;
+}
+
+.produtos .produto .content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    font-weight: 300;
+    font-size: 0.8rem;
+}
+
+.produtos .produto .content h2 {
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+/*Footer ------------------------------------------*/
+footer {
+    background: #262626;
+    color: #FFF;
+    padding: 10px 0;
+    text-align: center;
+}
+
+footer p {
+    font-size: 0.9rem;
+}
+
+footer p a {
+    color: #9733EE;
 }
