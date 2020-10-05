@@ -155,3 +155,94 @@ header .topo .cart {
     background: #FF4A4A;
     color: #FFF;
 }
+
+/*Categorias ------------------------------------*/
+.categorias {
+    width: 100%;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.categorias h1 {
+    font-size: 1.5rem;
+    font-weight: 300;
+    padding: 20px;
+}
+
+.categorias p {
+    font-weight: 300;
+    padding: 20px;
+}
+
+.categorias .content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.categorias .content .categoria {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+}
+
+.categorias .content .categoria .imagem {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #CCC;
+}
+
+.categorias .content .categoria .imagem img {
+    width: 100%;
+}
+
+.categorias .content .categoria h2 {
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+/*Newsletter -----------------------------------*/
+.newsletter {
+    background: #f8f2f2;
+    padding: 20px auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.newsletter img {
+    margin: 10px 5px;
+    width: 25%;
+    border: 1px solid red;
+}
+
+.newsletter .content h1 {
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin: 5px;
+}
+
+.newsletter form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.newsletter .content form input {
+    width: 100%;
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #CCC;
+    border-radius: 3px;
+}
+
+.newsletter .content form input[type="submit"] {
+    width: 35%;
+    background: #FF4A4A;
+    color: #FFF;
+}
